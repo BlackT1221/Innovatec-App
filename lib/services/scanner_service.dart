@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 
 class ScannerService {
   // Cambia esto por la IP de tu PC en la misma red WiFi (ej. 192.168.1.10) o tu URL de producción
-  final String baseUrl = "http://172.25.198.15:8000/api/v1"; 
+  final String baseUrl = "http://192.168.137.223:8000/api/v1"; 
   final Dio _dio = Dio();
 
   Future<Map<String, dynamic>?> enviarHojaEvaluacion(String imagePath) async {
